@@ -28,7 +28,8 @@ A Virtual Machine (VM) is an application that utilises software instead of a phy
 
 Virtual Machines act as virtual devices that behave as physical devices - they utilise their own CPU, RAM, storage and network interface (this is possible because the VM is hosted on a physical machine). The software responsible for creating VMs and for isolating hardware resources (hardware virtualisation) for them to use is called **hypervisor**. This software is also responsible for implementing all necessary changes to allow the utilisation of those resources by VMs. 
 
-![Hardware Virtualisation by MongoDB](https://webimages.mongodb.com/_com_assets/cms/lh54zev0ad49yc8uj-vm2.jpg?auto=format%252Ccompress)Image source:  [A Guide to Virtual Machines (VM) by MongoDB](https://www.mongodb.com/cloud-explained/virtual-machines) 
+![Hardware Virtualisation by MongoDB](https://webimages.mongodb.com/_com_assets/cms/lh54zev0ad49yc8uj-vm2.jpg?auto=format%252Ccompress)
+Image source:  [A Guide to Virtual Machines (VM) by MongoDB](https://www.mongodb.com/cloud-explained/virtual-machines) 
 
 ### *Debian* vs *Rocky Linux*
 Both *Debian* and *Rocky* are Linux distributions even though they are distinct in many ways. 
