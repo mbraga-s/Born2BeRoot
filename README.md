@@ -11,7 +11,8 @@ I. [English Guide](#english-guide)
  - [What is AppArmor?](#what-is-apparmor)
  - [Password policy and rules](#password-policy-and-rules)
  - [What is LVM?](#what-is-lvm)
- - [What is SSH?](#what-is-ssh)
+ - [Uncomplicated Firewall (UFW)](#uncomplicated-firewall-ufw)
+ - [SSH - How it works and what it means](#ssh---how-it-works-and-what-it-means)
  - [What is Cron?](#what-is-cron)
  
  II. [Portuguese Guide](#portuguese-guide)
@@ -54,8 +55,29 @@ As said by Pasquale Rossi in his [guide](https://github.com/pasqualerossi/Born2B
 ### What is LVM?
 LVM stands for Logical Volume Manager. It is an abstraction layer between a storage device and a file system that allows flexibility when managing partitions. This permits expanding the storage of partitions (logical volumes) without worrying about the contiguous space available on each logical volume and allows moving different logical volumes between physical devices.
 
-### What is SSH?
+### Uncomplicated Firewall (UFW)
+
+### SSH - How it works and what it means
+SSH or Secure Shell is a network communication protocol that enables secure system administration and file transfers over insecure networks. It works by encrypting the secure connection between a client and a server. As said in the [SSH website](https://www.ssh.com/academy/ssh/protocol):
+ > The protocol works in the client-server model, which means that the connection is established by the SSH client connecting to the SSH server. The SSH client drives the connection setup process and uses public key cryptography to verify the identity of the SSH server. After the setup phase the SSH protocol uses strong symmetric encryption and hashing algorithms to ensure the privacy and integrity of the data that is exchanged between the client and server.
+ 
+![Simplified setup flow of a secure shell connection by SSH Academy](https://www.ssh.com/hs-fs/hubfs/SSH_Client_Server.png?width=1112&name=SSH_Client_Server.png)
+Image source:  [Simplified setup flow of a secure shell connection by SSH Academy](https://www.ssh.com/academy/ssh/protocol) 
+
+Above are mentioned two different encryption techniques - symmetric encryption and hashing.
+#### Symmetric Encryption
+This technique encompasses utilising a solitary key to encode the data being sent and the same key to decode this data at its objective. For this reason, this method is also referred to as *shared key encryption*. 
+A common issue with this kind of trade is the underlying key trade. In the event that an outside figure manages to access the trade during this stage, they would be able to acquire the key and decrypt the data.
+
+![Symmetric Encryption by Wallarm](https://assets.website-files.com/5ff66329429d880392f6cba2/61c1b8f7eacaeb13c258c3c8_Symmetrical%20Encryption.png)Image source:  [Symmetric Encryption by Wallarm](https://www.wallarm.com/what/what-is-ssh-protocol) 
+
+#### Hashing
+Hashing is a technique that transforms data value into another value for the purpose of security. Hashing is used as one-way encryption and hashed values are very had to decode. It can be used in password validation, blockchain and message/fie integrity in order to prevent interference or tampering of information.
+
+![enter image description here](https://assets.website-files.com/5ff66329429d880392f6cba2/61c1b9202cf1ace217ea77b7_Hashing.png)Image source:  [Hashing Algorithms by Wallarm](https://www.wallarm.com/what/what-is-ssh-protocol) 
+
 ### What is Cron?
+ The cron standard Unix utility can be used to schedule commands or scripts for automatic execution at specific intervals (for instance, at a specific time of day).
  
 ## Portuguese Guide
 
@@ -85,8 +107,17 @@ LVM stands for Logical Volume Manager. It is an abstraction layer between a stor
 - [Ayoub's Born2BeRoot Repository](https://github.com/ayoub0x1/born2beroot#introduction)
 (consulted on 8th May 2023)
 
-- [AppArmor - Ubuntu wiki](https://wiki.ubuntu.com/AppArmor)
+- [AppArmor - Ubuntu Wiki](https://wiki.ubuntu.com/AppArmor)
 (consulted on 8th May 2023)
 
-- [AppArmor - Linux kernel security module](https://apparmor.net/)
+- [AppArmor](https://apparmor.net/)
 (consulted on 8th May 2023)
+
+- [What is SSH (Secure Shell)?](https://www.ssh.com/academy/ssh)
+(consulted on 9th May 2023)
+
+- [What is SSH Protocol?](https://www.wallarm.com/what/what-is-ssh-protocol)
+(consulted on 9th May 2023)
+
+- [What is Cron and How do I Use it?](https://www.pair.com/support/kb/configuring-cron/)
+(consulted on 9th May 2023)
