@@ -73,4 +73,19 @@
 	
 - Delete created rule
 	sudo ufw delete number
-		
+
+	---------SSH---------
+
+- Check SSH service started
+	sudo service ssh status
+
+- Connect to the VM
+	(check ip) hostname -I
+	(In Terminal) ssh newuser@ip -p 4242
+	--------CRON/SCRIPT-------
+
+- Check monitoring.sh
+	cd /usr/local/bin && vim monitoring.sh
+
+- Alter cron
+	sudo crontab -u root -e
