@@ -1,0 +1,76 @@
+- Check VM signature
+	cd sgoinfre/Born2beroot
+	shasum Born2beroot.vdi
+
+- Check UFW started
+	sudo ufw status
+	
+- Check ssh started
+	sudo systemctl status ssh
+		or
+	sudo service sshd status
+		
+- Check OS
+	lsb_release -a || cat /etc/os-release
+	
+	-------USERS--------
+	
+- Check group users:
+	getent group groupname 
+	(ex: getent group sudo)
+	
+- Create new user:
+	sudo adduser new_username
+	
+- Check password policy
+	sudo vim /etc/pam.d/common-password
+	sudo vim /etc/login.defs
+	
+- Add new group
+	sudo groupadd evaluating
+	
+- Add user to new group
+	sudo usermod -aG evaluating new_username
+	
+	----HOSTNAME-------
+
+- Check VM hostname
+	hostnamectl
+		or
+	sudo nano /etc/hosts
+	
+- Change hostname
+	sudo hostnamectl set-hostname new_hostname
+	sudo reboot
+	
+- View VM partitions
+	lsblk
+	
+	-----SUDO------
+	
+- Check SUDO intalled
+	dpkg -l | grep sudo
+	
+- Add user to sudo
+	su -
+	usermod -aG sudo user_name
+	
+- Check sudo rules
+	sudo visudo ls
+	
+- See sudo logs
+	(As root) cd ~/../
+	cd var/log/sudo
+	cat sudo.log
+	
+	------UFW--------
+
+- Check UFW working
+	sudo ufw status numbered
+	
+- Allow port 8080
+	sudo ufw allow 8080
+	
+- Delete created rule
+	sudo ufw delete number
+		
