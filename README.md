@@ -3,7 +3,7 @@ This 42 School's Born2BeRoot Project Guide was made using information obtained f
 
 In order to really grasp the information needed for this project, I recommend writing your own guide (feel free to use this one as a starting point to make your own). 
 ## Index
-I. [English Guide](#english-guide)
+I. [Guide](#guide)
  - [What is a Virtual Machine?](#what-is-a-virtual-machine)
  - [How does a Virtual Machine work and what is its purpose?](#how-does-a-virtual-machine-work-and-what-is-its-purpose)
  - [*Debian* vs *Rocky Linux*](#debian-vs-rocky-linux)
@@ -15,11 +15,9 @@ I. [English Guide](#english-guide)
  - [SSH - How it works and what it means](#ssh---how-it-works-and-what-it-means)
  - [What is Cron?](#what-is-cron)
  
- II. [Portuguese Guide](#portuguese-guide)
- 
 III. [Sources and Further Reading](#sources-and-further-reading)
 
-## English Guide
+## Guide
 
 ### What is a Virtual Machine?
 
@@ -78,8 +76,6 @@ Hashing is a technique that transforms data value into another value for the pur
 
 ### What is Cron?
  The cron standard Unix utility can be used to schedule commands or scripts for automatic execution at specific intervals (for instance, at a specific time of day).
- 
-## Portuguese Guide
 
 ## Sources and Further Reading
 

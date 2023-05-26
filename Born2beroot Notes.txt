@@ -1,3 +1,7 @@
+- Unlock VM
+	OneRing2rulethemall&in
+	User: mbraga-s
+
 - Check VM signature
 	cd sgoinfre/Born2beroot
 	shasum Born2beroot.vdi
@@ -11,7 +15,7 @@
 	sudo service sshd status
 		
 - Check OS
-	lsb_release -a || cat /etc/os-release
+	cat /etc/os-release
 	
 	-------USERS--------
 	
@@ -21,7 +25,10 @@
 	
 - Create new user:
 	sudo adduser new_username
-	
+
+- Verify passwd policy on new user
+	sudo chage -l username
+
 - Check password policy
 	sudo vim /etc/pam.d/common-password
 	sudo vim /etc/login.defs
