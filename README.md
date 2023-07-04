@@ -54,6 +54,7 @@ As said by Pasquale Rossi in his [guide](https://github.com/pasqualerossi/Born2B
 LVM stands for Logical Volume Manager. It is an abstraction layer between a storage device and a file system that allows flexibility when managing partitions. This permits expanding the storage of partitions (logical volumes) without worrying about the contiguous space available on each logical volume and allows moving different logical volumes between physical devices.
 
 ### Uncomplicated Firewall (UFW)
+UFW is an interface to modify the firewall of the device without compromising security. It's used to configure which ports to allow connections to and which ports to close. This is useful in conjunction with SSH, to set a specific port for it to work with.
 
 ### SSH - How it works and what it means
 SSH or Secure Shell is a network communication protocol that enables secure system administration and file transfers over insecure networks. It works by encrypting the secure connection between a client and a server. As said in the [SSH website](https://www.ssh.com/academy/ssh/protocol):
