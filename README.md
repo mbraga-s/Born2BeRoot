@@ -1,5 +1,5 @@
 # Born2BeRoot
-This 42 School's Born2BeRoot Project Guide was made using information obtained from several other similar guides and sources in order to better prepare my defence of this project. The questions answered below were obtained from [this document](https://docs.google.com/document/d/1-BwCO0udUP7MhRh81Y681zz0BalXtKFtte_FHJc6G4s/edit) (by Adrian Musso-Gonzalez) and answered in both english and portuguese.
+This 42 School's Born2BeRoot Project Guide was made using information obtained from several other similar guides and sources in order to better prepare my defence of this project. The questions answered below were obtained from [this document](https://docs.google.com/document/d/1-BwCO0udUP7MhRh81Y681zz0BalXtKFtte_FHJc6G4s/edit) (by Adrian Musso-Gonzalez).
 
 In order to really grasp the information needed for this project, I recommend writing your own guide (feel free to use this one as a starting point to make your own). 
 ## Index
